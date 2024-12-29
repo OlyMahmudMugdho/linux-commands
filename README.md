@@ -55,3 +55,26 @@
 36. `nohup` : inserts the printed content of a command to a file
     1.  example: `nohup ls` prints the output of `ls` to a file named `nohup.out`
     2.  **useful for logging**
+
+## Users and Group Management Commands
+37. `uname`: shows the platform where the OS is running
+38. `uptime`: prints the total time till the OS booted up
+39. `who`: prints about login info of users
+40. `whoami`: username of current logged in username
+41. `which package_name`: gives the location of the package_name
+42. `id`: gives user id, group id
+43. `sudo`: super user do
+44. `cat /etc/passwd` : lists all the users
+45. `shutdown` : shuts down the system (with sudo) 
+46. `reboot`: reboots the system
+47. ***press `Ctrl + r` to search previous commands***
+48. `useradd someone` : creates user whose username is `someone`
+    1.  `sudo useradd -m someone`: creates user `someone` with its home directory `/home/someone`
+49. `sudo passwd someone`
+50. `su someone` : switch user `someone`
+51. `userdel someone`:  delete the user `someone`
+52. `cat /etc/group`: list all groups
+53. `groupadd group-name`:  creates a group
+54. `gpasswd -a username group-name`: adds an user to a group
+    1.  `sudo gpasswd -M mugdho,mila,meghla group-name` : adds multiple user to a group
+55. `groupdel group-name`
