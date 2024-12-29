@@ -1,5 +1,7 @@
 # Necessary Linux Commands
 
+
+## Basic Commands
 1. `ls`: List all the files
    1. `ls -l`
    2. `ls -ltr`
@@ -20,6 +22,7 @@
 16. `zcat`
 17.  `head` : prints first 5 lines
      1. `head -f demo.txt` : monitors and prints
+     2. `head -n 7 demo.txt` : prints top 7 lines from demo.txt
 18.  `tail` : prints last 5 lines
      1. `tail -f demo.txt` :
 19. `less`: prints long file by pages
@@ -37,4 +40,18 @@
 26. `echo "hello" | tee hello.txt` : prints "hello" and insert the printed content into "hello.txt"
 27. `sort demo.txt` : sorts the content of `demo.txt` alphabetically
 28. `diff hello.txt demo.txt` : difference between hello.txt and demo.txt (maximum 2 params)
- 
+
+## SSH Commands
+29. `chmod 400 private-key.pem` : to use without `sudo`
+30. `ssh -i private-key.pem username@hostname` then enter `yes` : connect to remote machine. here `hostname` is the ***Public DNS*** of the remote machine.
+
+## Advance Commands
+31. `du` : disk utility
+32. `top` : show all running processes
+33. `ps` : show process info with id
+34. `fuser` : 
+35. `kill` : kill a processs
+    1. example:  `kill -9 process_id`
+36. `nohup` : inserts the printed content of a command to a file
+    1.  example: `nohup ls` prints the output of `ls` to a file named `nohup.out`
+    2.  **useful for logging**
