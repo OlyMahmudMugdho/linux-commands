@@ -78,3 +78,14 @@
 54. `gpasswd -a username group-name`: adds an user to a group
     1.  `sudo gpasswd -M mugdho,mila,meghla group-name` : adds multiple user to a group
 55. `groupdel group-name`
+
+
+## File Management Commands
+`chmod uer/notes.txt` : add read permission to owner
+`chmod g+rw/notes.txt` : add read write permission to group
+chmod o-r/notes.txt` : remove read permission to others
+
+`chmod <numeric-value-of-permission> <file-name>` : change permission using numeric value
+
+`chown <user name> <file/directory name>` : change ownership for user 
+`chgrp <group name> <file/directory name>` : For change group ownership 
